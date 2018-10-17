@@ -182,6 +182,28 @@ class Main
           *    ar2[3]=3  ->  ar2odds[1]=3
           */
          
+         System.out.println("***TASK 8 DEAD ANT DEAD ANT DEAD ANT*****");
+            int k=0;
+           int[] ar2odds = new int[ar2.length]; // too big right now.
+           for ( int i=0 ; i<ar2.length ; i++)
+           {
+               System.out.println(ar2[i]); // Just print it out to see
+               
+               if (i%2==1)
+               {
+                   ar2odds[k]=ar2[i];
+                   k++;
+               }
+           }
+           
+           for (int i=0 ; i<k ; i++)
+               System.out.println(ar2odds[i]);
+ 
+
+
+         
+         
+         
         /*
          * Task 9. In the array ar2, count how many odd numbers you
          * have.  Then create an ew array called ar4.  Copy just the odd
