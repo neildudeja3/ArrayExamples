@@ -1,21 +1,29 @@
 public class recursionDriver
 {
  
- public static int count(int n)
+     public static int count(int n)
+    {
+        // Base case AKA Stop Condition
+         if (n==0)
+             return 0; 
+
  
- {
-     if(n>0)
-     
-     return n;
+         return 20+count(n-1); 
+    } 
+ 
+ 
+ 
+     public static void main(String[] args)
      {
-         return count(n);
-        }
-    }
- 
- 
- 
- public static void main(String[] args)
- {
+     /*
+     * Count the number of 12 classrooms have, if each classroom has 20
+     */ 
+        System.out.println("*****RECURSION #2*******");
+     int counted=0;
+     counted = count(12);
+     System.out.println(counted);
+   }
+}
  /*
  * Count 
  * 1. Number of legs 10 elephant have
@@ -25,9 +33,3 @@ public class recursionDriver
  * 4. Find the sum of odd numbers from 0 to N
  * 5. Find the sum of even numbers from 0 to N
 */ 
- int counted=0;
- // Task 1.
- counted = count(10);
- System.out.println(counted);
- }
-}
